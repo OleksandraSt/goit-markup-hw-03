@@ -36,6 +36,11 @@ h3 {
     margin-bottom: 0;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -57,6 +62,20 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 /* Header */
 
@@ -197,18 +216,36 @@ button {
     background-color: var(--primary-background-color);
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .features-item {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .features-description {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+.features-list {
+    display: flex;
+}
+
+.features-li {
+    margin-right: 30px;
+}
+
+.features-li:last-child {
+    margin-right: 0;
 }
 
 /* Work */
