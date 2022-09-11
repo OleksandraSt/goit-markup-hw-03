@@ -284,6 +284,8 @@ button {
 
 .team {
     background-color: var(--lightbackground-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .our-team {
@@ -291,6 +293,12 @@ button {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
 }
 
 .team-member {
@@ -298,6 +306,7 @@ button {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
 .position {
@@ -308,6 +317,17 @@ button {
 
 .card {
     background-color: var(--primary-background-color);
+    margin-right: 30px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card-descr {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 /* Footer */
