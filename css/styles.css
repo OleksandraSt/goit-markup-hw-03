@@ -284,8 +284,6 @@ button {
 
 .team {
     background-color: var(--lightbackground-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .our-team {
@@ -334,6 +332,8 @@ button {
 
 .footer {
     background-color: var(--darkbackground-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -342,6 +342,16 @@ button {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--primary-text-darkbackground-color);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footer-info .item {
+    margin-bottom: 9px;
+}
+
+.footer-info .item:last-child {
+    margin-bottom: 0;
 }
 
 .footer-address {
@@ -371,7 +381,7 @@ button {
 }
 
 /* Cторінка Portfolio */
-
+/* #ECECEC */
 .section {
     background-color: var(--primary-background-color);
 }
