@@ -6,7 +6,6 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-    outline: 2px solid green;
 }
 
 :root {
@@ -20,6 +19,8 @@ html {
     --lightbackground-color: #F5F4FA;
     --dark-logo-color: #000000;
     --hero-button-hover-accent-color: #188CE8;
+    --border-header-color: #ECECEC;
+    --border-portfolio-color: #EEEEEE; 
 }
 
 body {
@@ -49,6 +50,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 button {
@@ -95,6 +98,7 @@ button {
 
 .header {
     background-color: var(--primary-background-color);
+    border-bottom: 1px solid var(--border-header-color);
 }
 
 .logo-header {
@@ -381,9 +385,23 @@ button {
 }
 
 /* Cторінка Portfolio */
-/* #ECECEC */
-.section {
+
+.portfolio {
     background-color: var(--primary-background-color);
+}
+
+.filtr-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filtr-list .item{
+    margin-right: 8px;
+}
+
+.filtr-list .item:last-child {
+    margin-right: 0;
 }
 
 .button {
@@ -393,6 +411,13 @@ button {
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
     background-color: var(--lightbackground-color);
+    border-radius: 4px;
+    border: none;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    min-width: 73px;
 }
 
 .button:hover,
@@ -402,12 +427,38 @@ button {
     cursor: pointer;
 }
 
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.project-list .item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.project-list .link {
+    display: block;
+    border: 1px solid var(--border-portfolio-color);
+}
+
+.project-descr {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+}
+
 .portfolio-project {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--secondary-text-color);
+    margin-bottom: 4px;
 }
 
 .project-caps{
