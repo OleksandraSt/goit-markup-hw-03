@@ -86,7 +86,7 @@ button {
 
 /* Header */
 
-.header .container {
+.header-container {
     display: flex;
     align-items: center;
 }
@@ -108,6 +108,9 @@ button {
     letter-spacing: 0.03em;
     color: var(--dark-logo-color);
     margin-right: 93px;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo {
@@ -120,6 +123,7 @@ button {
     line-height: 1.14;
     letter-spacing: 0.02em;
     display: flex;
+    margin-left: auto;
 
 }
 
@@ -131,20 +135,10 @@ button {
     margin-right: 0;
 }
 
-
-.header .site-contact {
-    margin-left: auto;
-}
-
 .list-nav .contact+ .contact {
     margin-left: 50px;
 }
 
-.header .link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
 
 .link-item {
     color: var(--secondary-text-color);
@@ -172,19 +166,9 @@ button {
 
 .hero {
     background-color: var(--darkbackground-color);
-}
-
-.hero .container {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-}
-
-.title-container {
-    width: 696px;
-    margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .hero-text {
@@ -194,6 +178,10 @@ button {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-text-darkbackground-color);
+    width: 696px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-button {
@@ -246,10 +234,13 @@ button {
 
 .features-list {
     display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
 }
 
 .features-li {
     margin-right: 30px;
+    flex-basis: calc(100% / 4 - 30px);
 }
 
 .features-li:last-child {
@@ -301,6 +292,8 @@ button {
 
 .team-list {
     display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
 }
 
 .team-member {
@@ -320,6 +313,7 @@ button {
 .card {
     background-color: var(--primary-background-color);
     margin-right: 30px;
+    flex-basis: calc(100% / 4 - 30px);
 }
 
 .card:last-child {
@@ -347,7 +341,7 @@ button {
     letter-spacing: 0.03em;
     color: var(--primary-text-darkbackground-color);
     margin-bottom: 20px;
-    display: block;
+    display: inline-block;
 }
 
 .footer-info .item {
